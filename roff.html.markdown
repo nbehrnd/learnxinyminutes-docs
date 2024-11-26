@@ -5,22 +5,27 @@ contributors:
 filename: learnroff.ms
 ---
 
+roff is NOT a "What You See Is What You Get" word processing software like
+MS Word, or OpenOffice Writer.
+
+roff documents start by deciding which macro package to use. There are
+many, all designed for different purposes and different types of documents.
+The most common one is the `man` macro package which most manpages are
+created from.
+
+The `ms` package is designed for creating for general purpose documents like
+papers, letters and books. It is the default package for groff. The `me`
+package is designed for creating technical documents. See `man 1 groff_me`
+or `man 1 groff_ms` for more details.
+
+Save the document below as `learnroff.ms` and compile it to yield a pdf
+by the following command:
+
+``` shell
+groff -p -e -t -ms -Tpdf learnroff.ms > learnroff.pdf
+```
+
 ```groff
-.\" roff is NOT a "What You See Is What You Get" word processing software like
-.\" MS Word, or OpenOffice Writer.
-
-.\" roff documents start by deciding which macro package to use. There are
-.\" many, all designed for different purposes and different types of documents.
-.\" The most common one is the man macro package which most manpages are
-.\" created from.
-
-.\" The ms package is designed for creating for general purpose documents like
-.\" papers, letters and books. It is the default package for groff. The me
-.\" package is designed for creating technical documents. See `man 1 groff_me`
-.\" or `man 1 groff_ms` for more details.
-
-.\" To build this document into a pdf use the following command:
-.\" groff -p -e -t -ms -Tpdf learnroff.ms > learnroff.pdf
 
 .\" All comments start with a \"
 .\" There are no multi-line comments. Comments can be inserted at the end of
