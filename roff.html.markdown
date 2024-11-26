@@ -69,7 +69,7 @@ Another subsection
 .LP
 More text can go here.
 
-.NH S 2 9 2 
+.NH S 2 9 2
 Some sections may need an explicit section number
 .LP
 However most cases you can rely on the automatic numbering. There is also
