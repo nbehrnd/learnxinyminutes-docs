@@ -6,16 +6,8 @@ filename: learnroff.ms
 ---
 
 ```groff
-.\" All comments start with a \"
-.\" There are no multi-line comments. Comments can be inserted at the end of
-.\" any line.
-
 .\" roff is NOT a "What You See Is What You Get" word processing software like
 .\" MS Word, or OpenOffice Writer.
-
-.\" Every roff command starts with a new line and a period (.) or a single
-.\" quote ('). Any line that doesn't start with a period or quote is considered
-.\" normal text.
 
 .\" roff documents start by deciding which macro package to use. There are
 .\" many, all designed for different purposes and different types of documents.
@@ -29,6 +21,14 @@ filename: learnroff.ms
 
 .\" To build this document into a pdf use the following command:
 .\" groff -p -e -t -ms -Tpdf learnroff.ms > learnroff.pdf
+
+.\" All comments start with a \"
+.\" There are no multi-line comments. Comments can be inserted at the end of
+.\" any line.
+
+.\" Every roff command starts with a new line and a period (.) or a single
+.\" quote ('). Any line that doesn't start with a period or quote is considered
+.\" normal text.
 
 .TL \" Sets the title of the document
 LearnXinYMinutes - roff Edition
